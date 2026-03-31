@@ -1,0 +1,6 @@
+w - hoch
+s - runter
+a - links
+d - rechts
+leertaste - angreifen
+e - einsammeln

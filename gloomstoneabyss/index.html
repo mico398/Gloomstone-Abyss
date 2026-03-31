@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloomstone Abyss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="map">
+            <img src="map.png" alt="map">
+        </div>
+        <div id="score"></div>
+        <div id="soulCount"></div>
+        <div id="gloomstoneCount"></div>
+        <div id="player">
+            <img src="player.png" alt="player">
+        </div>
+        <div id="health"></div>
+    </div>
+    <div id="deathScreen">
+        <h1>Game Over</h1>
+        <button id="restartButton">Restart</button>
+    </div>
+    <div id="waveBanner">Wave incoming!</div>
+    <div id="shopScreen">
+        <h1>Shop of Shadows</h1>
+        <div id="shopItems">
+            <button class="shopItem" data-upgrade="maxHealth">+1 Max HP (100 Souls)</button>
+            <button class="shopItem" data-upgrade="range">+50 Range (250 Souls)</button>
+            <button class="shopItem" data-upgrade="speed">+1 Speed (300 Souls)</button>
+        </div>
+    </div>
+    <div id="winScreen">
+        <h1>You won!</h1>
+        <button id="restartButton2">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

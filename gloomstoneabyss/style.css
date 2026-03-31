@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: monospace;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+#player {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50px);
+}
+
+.monster {
+    position: absolute;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+#soulCount {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+#gloomstoneCount {
+    display: flex;
+    position: absolute;
+    top: 110px;
+    right: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+#deathScreen {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 1001;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#waveBanner {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 20px;
+    z-index: 1000;
+    text-align: center;
+  }
+  
+#health {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+}
+
+.health-icon {
+    width: 64px;
+    height: 64px;
+}
+
+#shopScreen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1001;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 20px;
+}
+
+#winScreen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1001;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 20px;
+}
+
+#shopScreen h1 {
+    margin-bottom: 20px;
+}
+
+#shopItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.shopItem {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#continueButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#shopScreen button {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.gloomstone-img {
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+}

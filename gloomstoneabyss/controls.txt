@@ -1,0 +1,6 @@
+w - up
+s - down
+a - left
+d - right
+leertaste - attack
+e - collect
